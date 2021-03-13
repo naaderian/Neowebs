@@ -1,0 +1,54 @@
+// Go to Top
+#go-top
+{
+    width: 50px;
+    height: 50px;
+    background-color: $primary-color;
+    position: fixed;
+    bottom: 25px;
+    right: -80px;
+    z-index:  9999999999;
+    @include BorderRadius(50%); 
+    padding: 15px;
+    &:hover 
+    {
+        background-color: $primary-color-hover;
+    }
+    > img 
+    {
+      width: 100%;
+    }
+}
+.go-top-true
+{
+    right: 20px !important;
+    bottom: 25px !important;
+}
+// End Go to Top
+// Button
+.btn {
+    padding: 10px 20px;
+    background-color: $primary-color;
+    color: $white;
+    @include BorderRadius(7px);
+    margin: 10px 0 20px 0;
+    display: inline-block;
+    &:hover {
+      background-color: $primary-color-hover;
+    }
+  }
+// End Button
+// Line
+  .line {
+    border-bottom: 2px solid $line-color;
+    display: block;
+    width: 100px;
+    margin: 5px auto;
+    &:nth-last-of-type(2) {
+      width: 150px;
+    }
+  }
+  
+.border-right{
+  border-right: 10px solid $primary-color;
+}

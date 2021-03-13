@@ -1,0 +1,31 @@
+#price {
+  padding-top: 150px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.cart {
+  padding: 20px;
+  div {
+    background-color: $secondary-color;
+    width: 100%;
+    @include BorderRadius(7px);
+    box-shadow: -5px 15px 20px $cart-shadow;
+    text-align: center;
+    &:hover {
+      @include translate(0, -5px);
+    }
+    img {
+      width: 80px;
+      margin: 10px 0;
+    }
+    h2 {
+      font-weight: 500;
+    }
+    ul {
+      li {
+        list-style-type: none;
+        margin: 10px 0;
+      }
+    }
+  }
+}

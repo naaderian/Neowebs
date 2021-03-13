@@ -1,0 +1,70 @@
+// AboutUs
+#aboutUs {
+  padding-top: 100px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.aboutus-text {
+  > p {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  ol{
+    width: 100%;
+  }
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: $primary-color;
+  @include transition(0.5, ease);
+}
+.owl-carousel {
+  direction: ltr;
+  height: 300px;
+  .owl-stage-outer {
+    height: 360px;
+  }
+  .owl-nav button.owl-next,
+  .owl-nav button.owl-prev,
+  button.owl-dot {
+    display: none;
+  }
+
+  .owl-dots .owl-dot span {
+    background: $secondary-color;
+    width: 25px;
+    height: 10px;
+  }
+
+  .item {
+    padding: 20px;
+    background-color: $secondary-color;
+    width: 100%;
+    @include BorderRadius(7px);
+    box-shadow: -5px 15px 20px $cart-shadow;
+    text-align: center;
+    figure {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+
+      img {
+        width: 65px !important;
+        height: 65px;
+        border: 3px solid $primary-color;
+        @include BorderRadius(50%);
+      }
+    }
+
+    h4 {
+      margin-bottom: 15px;
+    }
+
+    a {
+      color: $primary-color;
+    }
+  }
+}
+// End AboutUs

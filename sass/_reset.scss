@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: $muted;
+}
+*:not(.fa) {
+  font-family: vazir;
+}
+p {
+  line-height: 2;
+  direction: rtl;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+::selection
+{
+  background-color: $primary-color;
+  color: $white;
+}

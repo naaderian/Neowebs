@@ -1,0 +1,16 @@
+.submit{
+    background-color: $white;
+    width: 50%;
+    margin: 70px auto;
+    @include BorderRadius(7px);
+    text-align: center;
+    box-shadow: -5px 15px 20px $cart-shadow;
+    padding: 20px;
+    a{
+        padding-top: 20px;
+        display: block;
+        &:focus{
+            color: $black;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+
+
+    .blogHeader{
+        height: 60vh;
+        background-image: $overlay,url(../img/thought-catalog-505eectW54k-unsplash.jpg) !important;
+        div{
+            text-align: center;
+            color: $white;
+            margin: 0 auto;
+        }
+    }
+
+  .wraper-blog{
+    
+      .item-blog{
+          width: 45%;
+          height: 400px;
+         
+          margin: 140px auto 290px auto;
+          img{
+              width: 100%;
+              border-radius: 5px;
+
+          }
+          button{
+              width: 100%;
+              text-align: center;
+              background-color: $primary-color;
+              color: white;
+              border: none;
+              height: 40px;
+              border-radius: 5px;
+          }
+      }
+  }
+
+  @media only screen and (max-width:600px){
+    .wraper-blog{
+    .item-blog{
+        width: 80%;
+    }
+}
+  }

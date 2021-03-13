@@ -1,0 +1,78 @@
+header.Pprice_header {
+  background: linear-gradient(#302e2e7a, #4646466e), url("../img/Price.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60vh;
+  > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    > h1,
+    p {
+      color: $white;
+    }
+  }
+}
+
+main.Pprice_main {
+  > section {
+    width: 100%;
+    margin-top: 150px;
+    > div:first-child {
+      > div {
+        > h2 {
+          text-align: center;
+        }
+      }
+    }
+    > section {
+      justify-content: center;
+      > div {
+          display: flex;
+          justify-content: center;
+        > div {
+          padding: 15px;
+          height: 270px;
+          background-color: $cart-shadow;
+          border-radius: 7px;
+          margin: 25px 25px;
+          border-right: 10px solid $primary-color;
+          > h4 {
+            color: $primary-color;
+            font-size: 25px;
+            width: 100%;
+            display: block;
+          }
+          > div {
+            width: 50%;
+            float: right;
+            > h6 {
+              font-size: 15px;
+              color: $primary-color;
+            }
+          }
+          > a {
+            width: 90%;
+            margin: 0 auto;
+            height: 35px;
+            background-color: $primary-color;
+            color: $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 7px;
+
+            &:hover
+            {
+                background-color: $primary-color-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+}

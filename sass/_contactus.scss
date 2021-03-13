@@ -1,0 +1,76 @@
+// ContactUs
+#contactUs {
+  margin-top: 30px;
+  padding-top: 120px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.contactus-text
+{
+    display: flex;
+    justify-content: center;
+
+    > p 
+    {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+.contactus-form
+{
+    display: flex;
+    justify-content: center;
+
+    form 
+    {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+
+        input 
+        {
+            @include BorderRadius(7px);
+            border: 1px solid $secondary-color;
+            padding: 10px;
+            width: 100%;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        input:focus,textarea:focus
+        {
+            border-color: $primary-color;
+        }
+        input:first-child
+        {
+            margin-top: 50px;
+        }
+        textarea 
+        {
+            @include BorderRadius(7px);
+            border: 1px solid $secondary-color;
+            margin: 10px 0;
+            padding: 10px;
+            width: 100% !important;
+            height: 200px !important;
+            font-size: 18px;
+        }
+        button 
+        {
+            margin-top: 10px;
+            width: 100%;
+            height: 50px;
+            border: none;
+            background-color: $primary-color;
+            color: $white;
+            @include BorderRadius(7px);
+            cursor: pointer;
+            font-size: 20px;
+
+            &:hover 
+            {
+                background-color: $primary-color-hover;
+            }
+        }
+    }
+}
+// End ContactUs

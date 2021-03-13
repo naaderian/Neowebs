@@ -1,0 +1,63 @@
+#portfolio {
+  padding-top: 100px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.portfolio-btn-div {
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  > .btn-portfolio {
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 10px;
+    @include BorderRadius(7px);
+    margin: 10px 5px;
+    cursor: pointer;
+    &:hover{
+      background-color: $primary-color-hover;
+      color: $white;
+      border: 1px solid $white;
+    }
+  }
+  .btn-portfolio-click {
+    color: $white;
+    background-color: $primary-color;
+   
+  }
+}
+.portfolio-div {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin-top: 40px;
+  .row {
+    .portfolio-image {
+      display: flex;
+      margin: 10px 0;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        @include translate(0, -5px);
+      }
+      figure {
+        width: 100%;
+        img {
+          width: 100%;
+          @include BorderRadius(7px);
+          box-shadow: -10px 10px 20px $cart-shadow;
+
+        }
+      }
+    }
+  }
+}

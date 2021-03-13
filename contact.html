@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/master.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+    <link rel="manifest" href="img/Favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/Favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- End Favicon -->
+</head>
+
+<body onscroll="everyscroll()">
+    <div id="loading-wr">
+        <div></div>
+        <div></div>
+    </div>
+    <!--Nav-->
+    <nav>
+        <!-- Logo -->
+        <a href="" id="logo">
+                <img src="img/Logo.png" alt="">
+            </a>
+            <!-- End Logo -->
+        <!-- Menu-icon -->
+        <button id="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <!-- End Menu-icon -->
+        <ul>
+            <li><a href="index.html">صفحه اصلی</a></li>
+            <li><a href="price.html">تعرفه ها</a></li>
+            <li><a href="#portfolio">نمونه کار ها</a></li>
+            <li><a href="blog.html">وبلاگ</a></li>
+            <li><a href="aboutus.html">درباره ما</a></li>
+            <li><a href="contact.html">تماس با ما</a></li>
+        </ul>
+    </nav>
+    <!-- End Nav -->
+    <!-- Header -->
+    <header class="Pcontact">
+        <div class="contact">
+            <h1> تماس با ما</h1>
+            <h3>تیم ما همیشه آماده پشتیبانی از شماست</h3>
+
+        </div>
+    </header>
+    <!-- End Header -->
+    </section>
+
+    <!-- End About Us -->
+
+    <!-- Contact Us -->
+
+    <section>
+        <div class="container">
+            <div id="contactUs">
+                <h2>تماس با ما</h2>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <div class="column-xs-12 column-s-12 column-m-12 column-l-12 column-xl-12 contactus-text">
+                <p>
+                    هر ثانیه هر دقیقه هر ساعت هرروز هر هفته هر ماه هر سال در خدمت شما عزیزان
+                </p>
+            </div>
+
+            <div class="column-xs-12 column-s-12 column-m-6 column-l-6 column-xl-6 contactus-form">
+                <form action="https://submit-form.com/EzsVwhsVyhyO5NI3e-0uM " target="_self"
+                    class="column-xs-12 column-s-12 column-m-6 column-l-6 column-xl-6">
+                    <!-- <input type="hidden" name="_redirect" value="submit.html" /> -->
+                    <input type="text" name="name" placeholder="نام" id="name">
+                    <input type="number" name="tel" placeholder="شماره تماس" max="11" id="tel">
+                    <input type="email" name="email" placeholder="ایمیل">
+                    <textarea name="message" placeholder="متن پیام"></textarea>
+                    <button type="button" onclick="cheking()" id="submit"> ارسال</button>
+                </form>
+            </div>
+        </div>
+    </section>
+<!-- Footer -->
+
+<footer>
+        &copy; 2019 Neoweb Studio
+        <div>
+            <a href="https://www.instagram.com/neowebstudio/">
+                <img src="img/instagram.png" alt="">
+            </a>
+        </div>
+    </footer>
+
+    <!-- End Footer -->
+
+    <!-- Go to Top  -->
+    <a href="#" id="go-top">
+        <img src="img/arrow-up.svg" alt="">
+    </a>
+    <!-- End Go to Top -->
+    <script src="jquery/jquery-3.4.1.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+
+    <script>
+        function cheking() {
+            let inpname = document.getElementById("name");
+            let inptel = document.getElementById("tel");
+            if (inpname.value == "") {
+                inpname.style.border = "1px solid red"
+                $("#submit").attr("type", "button")
+            } else if (inptel.value == "") {
+                inptel.style.border = "1px solid red"
+                $("#submit").attr("type", "button")
+            }
+            else {
+                $("#submit").attr("type", "submit")
+                inpname.style.border = "1px solid #E5E5E5"
+                inptel.style.border = "1px solid #E5E5E5"
+            }
+        }
+
+    </script>
+
+    <script>
+        window.onload = () => {
+            setTimeout(() => {
+                document.getElementById("loading-wr").style.display = "none";
+            }, 2000);
+        }
+    </script>
+
+
+    <script>
+        var styles = [
+            'background: #323846'
+            , 'color: #fff'
+            , 'display: block'
+            , 'line-height: 40px'
+            , 'text-align: center'
+            , 'font-weight: 100'
+            , 'font-size: 15px'
+            , 'width: 100%'
+            , ' border-radius: 7px'
+            , 'padding: 20px'
+        ].join(';');
+        console.log("%c Made by: Amirhossein Naderian, Ali Mohammadsadegh, Mohammad Ashrafi, Mahyar Navpanahi, Amirhossein Rafiee ", styles);
+    </script>
+    <!-- Responsive Menu -->
+
+    <script>
+        let min = document.getElementById('menu')
+        min.addEventListener('click', () => {
+            min.classList.toggle('min')
+        });
+    </script>
+
+    <!-- Responsive Menu -->
+
+    <!-- owlcarousel script -->
+
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 25,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            })
+        });
+    </script>
+
+    <!-- owlcarousel script -->
+
+    <!-- Go top btn script -->
+
+    <script>
+        var safari;
+        var etcbrowsers;
+        const everyscroll = () => {
+            safari = document.body;
+            etcbrowsers = document.documentElement;
+            if ((safari.scrollTop > 500) || (etcbrowsers.scrollTop > 500)) {
+                document.getElementById('go-top').classList.add('go-top-true');
+            }
+            else {
+                document.getElementById('go-top').classList.remove('go-top-true');
+            }
+        };
+    </script>
+    
+</body>
+
+</html>
